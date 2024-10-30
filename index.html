@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Andev Web</title>
+  <link rel="stylesheet" href="/dss-login/index.css">
+  <link rel="icon" href="https://www.pngitem.com/pimgs/m/158-1584997_artificial-intelligence-artificial-intelligence-ai-icons-hd-png.png" type="png">
+
+</head>
+<body>
+    <div class="form-structor">
+        <div class="signup">
+            <h2 class="form-title" id="signup"><span>or</span>Sign up</h2>
+            <div class="form-holder">
+                <input type="text" id="signup-name" class="input" placeholder="Name" />
+                <input type="email" id="signup-email" class="input" placeholder="Email" />
+                <input type="password" id="signup-password" class="input" placeholder="Password" />
+            </div>
+            <button class="submit-btn" onclick="signup()">Sign up</button>
+        </div>
+        <div class="login slide-up">
+            <div class="center">
+                <h2 class="form-title" id="login"><span>or</span>Log in</h2>
+                <div class="form-holder">
+                    <input type="email" id="login-email" class="input" placeholder="Email" />
+                    <input type="password" id="login-password" class="input" placeholder="Password" />
+                </div>
+                <button class="submit-btn" onclick="login()">Log in</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Button to See All Accounts -->
+    <button class="see-accounts-btn" onclick="toggleAccountDisplay()">view data</button>
+    
+    <!-- Section to Display Accounts (Initially Hidden) -->
+    <div class="account-list" id="account-list" style="display: none;">
+        <h2>Registered Accounts</h2>
+        <ul id="account-display"></ul>
+    </div>
+    
+    
+  <script  src="/dss-login/index.js"></script>
+  <script src="/dss-login/signup.js"></script>
+
+</body>
+</html>
+            
