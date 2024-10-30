@@ -39,7 +39,7 @@ function login() {
 
     if (user) {
         alert(`Welcome, ${user.name}!`);
-        window.location.href = "/dss-gadget/dss-AI.html";  // Redirect to DSS page
+        window.location.href = "./dss-gadget/dss-AI.html";  // Redirect to DSS page
     } else {
         alert("Invalid email or password.");
     }
